@@ -1,0 +1,31 @@
+[server]
+
+[mysqld]
+
+user                    = mysql # define user
+
+pid-file                = /run/mysqld/mysqld.pid # where pid is stocked
+
+socket                  = /run/mysqld/mysqld.sock # where the socket is stocked for communication between client and server
+
+port                   = 3306 # default port for mysql and mariadb
+
+basedir                 = /usr # where binarys are stocked
+
+datadir                 = /var/lib/mysql # where db is stocked
+
+tmpdir                  = /tmp 
+
+lc-messages-dir         = /usr/share/mysql # where language files are stocked
+
+bind-address            = 0.0.0.0 # accepts all networks interfaces (default is local host) 
+
+query_cache_size        = 16M 
+
+log_error = /var/log/mysql/error.log 
+
+expire_logs_days        = 10 
+
+character-set-server  = utf8mb4  
+
+collation-server      = utf8mb4_general_ci 
